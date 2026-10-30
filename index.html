@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#19182f">
+    <meta name="description" content="Portfolio de Semih Dusunceli, étudiant en BTS SIO SISR et alternant chez Orange. Découvrez son parcours, ses compétences et ses projets.">
+
+    <title>Semih.dev | Portfolio</title>
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/commun.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="page-accueil">
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                semih<span class="logo-dot">.</span>dev
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active" aria-current="page">Accueil</a>
+                <a href="profil.html">Profil</a>
+                <a href="epreuves.html">Démonstration des épreuves</a>
+                <a href="formation.html">Formation</a>
+                <a href="experience.html">Expérience</a>
+                <a href="projets.html">Projets</a>
+                <a href="competences.html">Compétences</a>
+                <a href="veille.html">Veille technologique</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button
+                    id="theme-toggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Changer de thème"
+                    aria-pressed="false"
+                >
+                    <span id="theme-icon" aria-hidden="true">☀</span>
+                </button>
+
+                <a href="contact.html" class="nav-contact">
+                    Me contacter ↗
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO : IDENTITÉ -->
+        <section class="hero" id="accueil">
+
+            <div class="hero-inner">
+
+                <div class="hero-topline">
+                    <span>PORTFOLIO PERSONNEL / 2026</span>
+                    <span class="hero-location">
+                        <span class="status-dot"></span>
+                        DISPONIBLE POUR ÉCHANGER
+                    </span>
+                </div>
+
+                <div class="hero-main">
+
+                    <!-- IDENTITÉ -->
+                    <div class="intro reveal">
+
+                        <p class="eyebrow">
+                            BTS SIO · OPTION SISR
+                        </p>
+
+                        <h1>
+                            <span class="hero-title-small">JE SUIS</span>
+                            SEMİH<span class="highlight">.</span>
+                            <span class="hero-title-outline">DUSUNCELI</span>
+                        </h1>
+
+                        <div class="hero-role">
+                            <span class="role-line"></span>
+                            <p>
+                                <span id="typing-text">Étudiant en BTS SIO SISR</span>
+                                <span class="cursor">|</span>
+                            </p>
+                        </div>
+
+                        <p class="description">
+                            Entre systèmes, réseaux et environnements professionnels,
+                            je construis progressivement mon parcours dans l'informatique.
+
+                            Actuellement en deuxième année de BTS SIO SISR à Schola Nova
+                            et en alternance chez Orange comme pilote d'activité.
+                        </p>
+
+                        <div class="hero-actions">
+
+                            <a href="projets.html" class="btn btn-primary">
+                                Explorer mes projets ↗
+                            </a>
+
+                            <a href="profil.html" class="btn btn-ghost">
+                                En savoir plus
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PHOTO -->
+                    <div class="hero-visual reveal">
+
+                        <div class="visual-index">
+                            <span>FIG. 001</span>
+                            <span>IDENTITY</span>
+                        </div>
+
+                        <div class="portrait-frame">
+
+                            <div class="portrait-frame-label">
+                                SEMIH / 01
+                            </div>
+
+                            <img
+                                src="images/semih.jpg"
+                                alt="Portrait de Semih Dusunceli"
+                            >
+
+                            <span class="portrait-cross portrait-cross-one">+</span>
+                            <span class="portrait-cross portrait-cross-two">+</span>
+
+                        </div>
+
+                        <div class="visual-caption">
+                            <span>ÉTUDIANT & ALTERNANT</span>
+                            <span>FRANCE · 2026</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- BANDEAU TECHNIQUE -->
+                <div class="hero-bottom">
+
+                    <div class="hero-bottom-item">
+                        <span class="bottom-number">01</span>
+                        <span>INFRASTRUCTURE</span>
+                    </div>
+
+                    <div class="hero-bottom-item">
+                        <span class="bottom-number">02</span>
+                        <span>RÉSEAUX</span>
+                    </div>
+
+                    <div class="hero-bottom-item">
+                        <span class="bottom-number">03</span>
+                        <span>SYSTÈMES</span>
+                    </div>
+
+                    <div class="hero-bottom-note">
+                        <span class="status-dot"></span>
+                        EN CONSTANTE ÉVOLUTION
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#parcours" class="scroll-cue">
+                <span></span>
+                DÉCOUVRIR
+            </a>
+
+            <!-- DÉCORATION GRAPHIQUE -->
+            <div class="hero-coordinate coordinate-one">
+                SYS. 48° / NET. 01
+            </div>
+
+            <div class="hero-coordinate coordinate-two">
+                SEMIH.DEV — 2026
+            </div>
+
+        </section>
+
+
+        <!-- PARCOURS -->
+        <section class="section section-alt" id="parcours">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    01 / MON PARCOURS
+                </p>
+
+                <h2>
+                    Un parcours en construction.
+                    <span class="highlight">Des compétences en action.</span>
+                </h2>
+
+                <p>
+                    De ma formation en informatique à mon expérience en entreprise,
+                    découvrez les différentes étapes de mon évolution.
+                </p>
+
+            </div>
+
+            <!-- EXPÉRIENCE ET FORMATION -->
+            <div class="journey-layout">
+
+                <article class="journey-feature reveal">
+
+                    <div class="journey-feature-top">
+                        <span>01 — EXPÉRIENCE PROFESSIONNELLE</span>
+                        <span class="journey-symbol">↗</span>
+                    </div>
+
+                    <div class="journey-feature-content">
+                        <p class="journey-date">DEPUIS SEPTEMBRE 2025</p>
+
+                        <h3>Orange<span class="highlight">.</span></h3>
+
+                        <p class="journey-role">
+                            Pilote d'activité · Alternance
+                        </p>
+
+                        <p>
+                            Une immersion dans un environnement professionnel
+                            autour de la fibre, de la supervision et du suivi
+                            des activités réseau.
+                        </p>
+
+                        <a href="experience.html" class="text-link">
+                            Découvrir mon expérience ↗
+                        </a>
+                    </div>
+
+                    <div class="journey-feature-footer">
+                        <span>ENTREPRISE</span>
+                        <span>01 / 02</span>
+                    </div>
+
+                </article>
+
+
+                <article class="journey-secondary reveal">
+
+                    <div class="journey-secondary-top">
+                        <span>02 — FORMATION</span>
+                        <span>2024 — 2027</span>
+                    </div>
+
+                    <div class="journey-secondary-content">
+                        <p class="journey-date">SCHOLA NOVA</p>
+
+                        <h3>BTS SIO <span class="highlight">SISR</span></h3>
+
+                        <p>
+                            Services Informatiques aux Organisations,
+                            spécialité Solutions d'Infrastructure,
+                            Systèmes et Réseaux.
+                        </p>
+
+                        <a href="formation.html" class="text-link">
+                            Voir ma formation ↗
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- UNIVERS INFORMATIQUE -->
+        <section class="section technical-section">
+
+            <div class="technical-heading reveal">
+
+                <div>
+                    <p class="eyebrow">02 / MON UNIVERS</p>
+
+                    <h2>
+                        Ce qui me fait
+                        <span class="highlight">avancer.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Apprendre, expérimenter, configurer et comprendre
+                    les technologies qui font fonctionner les infrastructures.
+                </p>
+
+            </div>
+
+            <div class="technical-list">
+
+                <a href="projets.html" class="technical-item reveal">
+                    <span class="technical-number">01</span>
+                    <span class="technical-name">Projets informatiques</span>
+                    <span class="technical-description">Mes réalisations et expérimentations</span>
+                    <span class="technical-arrow">↗</span>
+                </a>
+
+                <a href="competences.html" class="technical-item reveal">
+                    <span class="technical-number">02</span>
+                    <span class="technical-name">Compétences</span>
+                    <span class="technical-description">Systèmes, réseaux et outils</span>
+                    <span class="technical-arrow">↗</span>
+                </a>
+
+                <a href="veille.html" class="technical-item reveal">
+                    <span class="technical-number">03</span>
+                    <span class="technical-name">Veille technologique</span>
+                    <span class="technical-description">Suivre les évolutions du numérique</span>
+                    <span class="technical-arrow">↗</span>
+                </a>
+
+                <a href="epreuves.html" class="technical-item reveal">
+                    <span class="technical-number">04</span>
+                    <span class="technical-name">Épreuves du BTS</span>
+                    <span class="technical-description">Démonstration de mon parcours</span>
+                    <span class="technical-arrow">↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact-strip reveal">
+
+            <div class="contact-strip-inner">
+
+                <div>
+                    <p class="eyebrow">03 / PRENONS CONTACT</p>
+
+                    <h2>
+                        Un projet, une question ?
+                        <span class="highlight">Discutons.</span>
+                    </h2>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Me contacter ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            semih<span class="logo-dot">.</span>dev
+        </a>
+
+        <p>
+            © <span id="current-year"></span>
+            Semih Dusunceli · Portfolio
+        </p>
+
+        <a href="#accueil" class="back-top">
+            Retour en haut ↑
+        </a>
+
+    </footer>
+
+</body>
+</html>

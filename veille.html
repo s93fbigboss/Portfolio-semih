@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#19182f">
+    <meta name="description" content="Veille technologique de Semih sur la cybersécurité, les vulnérabilités et la protection des infrastructures informatiques.">
+    <title>Veille technologique | semih.dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/commun.css">
+    <link rel="stylesheet" href="css/veille.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="page-veille">
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">semih<span class="logo-dot">.</span>dev</a>
+        <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="profil.html">Profil</a>
+                <a href="epreuves.html">Démonstration des épreuves</a>
+                <a href="formation.html">Formation</a>
+                <a href="experience.html">Expérience</a>
+                <a href="projets.html">Projets</a>
+                <a href="competences.html">Compétences</a>
+                <a href="veille.html" class="active" aria-current="page">Veille technologique</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Changer de thème" aria-pressed="false">
+                <span id="theme-icon" aria-hidden="true">☀</span>
+            </button>
+            <a href="contact.html" class="nav-contact">Me contacter ↗</a>
+        </div>
+    </nav>
+</header>
+
+<!-- INTRO HACKING -->
+<div class="hacking-intro" id="hacking-intro">
+    <div class="hacking-topbar">
+        <span>SEMIH.DEV // CYBERSECURITY TERMINAL</span>
+        <span class="terminal-status">SYSTEM ONLINE</span>
+    </div>
+    <div class="matrix-layer" id="matrix-layer"></div>
+    <div class="hacking-content">
+        <div class="terminal-icon">▣</div>
+        <p class="terminal-small">SECURE CONNECTION // 2026</p>
+        <h1 class="terminal-title">INITIALISATION<span class="terminal-cursor">_</span></h1>
+        <div class="terminal-console" id="terminal-console">
+            <p><span>[ 01 ]</span> Initialisation du système...</p>
+            <p><span>[ 02 ]</span> Chargement des protocoles de sécurité...</p>
+            <p><span>[ 03 ]</span> Analyse du réseau...</p>
+            <p><span>[ 04 ]</span> Vérification des accès...</p>
+            <p class="terminal-success">[ 05 ] ACCÈS AUTORISÉ</p>
+        </div>
+        <div class="terminal-progress"><div class="terminal-progress-fill" id="terminal-progress-fill"></div></div>
+        <p class="terminal-loading" id="terminal-loading">VEUILLEZ PATIENTER...</p>
+        <button class="skip-intro" id="skip-intro" type="button">PASSER L'INTRODUCTION ↗</button>
+    </div>
+    <div class="hacking-footer">
+        <span>ENCRYPTED CONNECTION</span>
+        <span>SEMIH.DEV © 2026</span>
+    </div>
+</div>
+
+    <main>
+
+        <!-- INTRODUCTION -->
+        <section class="veille-hero">
+
+            <div class="veille-hero-content">
+                <span class="section-tag">BTS SIO · OPTION SISR</span>
+
+                <p class="veille-overline">VEILLE TECHNOLOGIQUE / 2026</p>
+
+                <h1>
+                    Comprendre les menaces.<br>
+                    <span>Anticiper les attaques.</span>
+                </h1>
+
+                <p class="veille-intro">
+                    La cybersécurité évolue constamment. Les nouvelles vulnérabilités,
+                    les cyberattaques et les correctifs de sécurité obligent les
+                    professionnels de l'informatique à rester informés.
+                    Cette veille présente des actualités, leurs conséquences
+                    et les solutions à mettre en place.
+                </p>
+
+                <div class="veille-hero-tags">
+                    <span>Cybersécurité</span>
+                    <span>Vulnérabilités</span>
+                    <span>Sécurité des serveurs</span>
+                </div>
+            </div>
+
+            <div class="veille-hero-visual">
+                <div class="veille-visual-card">
+                    <span class="visual-label">SUJET À LA UNE</span>
+                    <div class="visual-symbol">!</div>
+                    <h2>PHP2Shell</h2>
+                    <p>Deux vulnérabilités critiques dans PHP</p>
+                    <span class="visual-date">21 OCTOBRE 2026</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- SUJET PRINCIPAL -->
+        <section class="veille-section">
+
+            <div class="veille-section-heading">
+                <div>
+                    <span class="section-tag">01 / ACTUALITÉ PRINCIPALE</span>
+                    <h2>Une faille critique dans PHP</h2>
+                </div>
+
+                <span class="veille-date">21 — 27 octobre 2026</span>
+            </div>
+
+            <article class="veille-feature">
+
+                <div class="veille-feature-image">
+                    <img
+                        src="https://www.bleepstatic.com/content/hl-images/2025/03/11/PHP-cracked-hack.jpg"
+                        alt="Illustration d'une attaque informatique visant PHP"
+                        loading="lazy"
+                    >
+                    <span class="image-credit">
+                        Illustration : BleepingComputer
+                    </span>
+                </div>
+
+                <div class="veille-feature-content">
+
+                    <div class="article-meta">
+                        <span class="article-category">VULNÉRABILITÉ</span>
+                        <span>21 octobre 2026</span>
+                    </div>
+
+                    <h3>PHP2Shell : deux failles permettant l'exécution de code à distance</h3>
+
+                    <p>
+                        Le 21 octobre 2026, le projet PHP a publié des correctifs
+                        de sécurité concernant deux vulnérabilités critiques :
+                        CVE-2026-109618 et CVE-2026-109619.
+                    </p>
+
+                    <p>
+                        Ces failles peuvent permettre à un attaquant distant,
+                        dans certaines configurations, d'exécuter du code sur
+                        un serveur utilisant une version vulnérable de PHP,
+                        sans authentification préalable.
+                    </p>
+
+                    <div class="article-facts">
+                        <div>
+                            <strong>2</strong>
+                            <span>Vulnérabilités</span>
+                        </div>
+                        <div>
+                            <strong>9.2</strong>
+                            <span>Score CVSS v4.0</span>
+                        </div>
+                        <div>
+                            <strong>RCE</strong>
+                            <span>Exécution de code à distance</span>
+                        </div>
+                    </div>
+
+                    <a
+                        href="https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="article-link"
+                    >
+                        Consulter l'alerte officielle du CERT-FR ↗
+                    </a>
+
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- COMPRENDRE LA MENACE -->
+        <section class="veille-section veille-explanation">
+
+            <div class="veille-section-heading">
+                <div>
+                    <span class="section-tag">02 / COMPRENDRE</span>
+                    <h2>Que s'est-il passé ?</h2>
+                </div>
+            </div>
+
+            <div class="veille-explanation-grid">
+
+                <article class="explanation-card">
+                    <span class="explanation-number">01</span>
+                    <h3>La vulnérabilité</h3>
+                    <p>
+                        Les deux failles concernent la gestion de la mémoire
+                        pendant le traitement des requêtes PHP. Une erreur
+                        peut laisser des données internes dans un état
+                        incorrect et créer une possibilité d'exploitation.
+                    </p>
+                    <span class="explanation-reference">
+                        CVE-2026-109618 / CVE-2026-109619
+                    </span>
+                </article>
+
+                <article class="explanation-card">
+                    <span class="explanation-number">02</span>
+                    <h3>Le risque pour le serveur</h3>
+                    <p>
+                        Une exploitation réussie peut permettre l'exécution
+                        de commandes à distance avec les privilèges du
+                        processus PHP. Cela peut entraîner une compromission
+                        du serveur et exposer les données qu'il héberge.
+                    </p>
+                    <span class="explanation-reference">
+                        Exécution de code à distance (RCE)
+                    </span>
+                </article>
+
+                <article class="explanation-card">
+                    <span class="explanation-number">03</span>
+                    <h3>Les systèmes concernés</h3>
+                    <p>
+                        Plusieurs modes d'exécution de PHP sont concernés,
+                        notamment Apache avec mod_php et, selon les
+                        configurations, PHP-FPM, php-cgi ou d'autres
+                        environnements utilisant PHP.
+                    </p>
+                    <span class="explanation-reference">
+                        Serveurs et applications web
+                    </span>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHRONOLOGIE -->
+        <section class="veille-section">
+
+            <div class="veille-section-heading">
+                <div>
+                    <span class="section-tag">03 / CHRONOLOGIE</span>
+                    <h2>Les dates importantes</h2>
+                </div>
+            </div>
+
+            <div class="veille-timeline">
+
+                <div class="timeline-entry">
+                    <span class="timeline-date">20 OCT. 2026</span>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-text">
+                        <h3>Annonce des vulnérabilités</h3>
+                        <p>
+                            Le projet PHP communique sur deux vulnérabilités
+                            critiques et annonce la publication prochaine
+                            des correctifs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <span class="timeline-date">21 OCT. 2026</span>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-text">
+                        <h3>Publication des correctifs</h3>
+                        <p>
+                            Les nouvelles versions corrigées de PHP sont
+                            publiées. Le CERT-FR diffuse une alerte officielle.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <span class="timeline-date">22 OCT. 2026</span>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-text">
+                        <h3>Publication de preuves de concept</h3>
+                        <p>
+                            Le CERT-FR indique avoir connaissance de preuves
+                            de concept pour ces vulnérabilités.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <span class="timeline-date">26 OCT. 2026</span>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-text">
+                        <h3>Exploitation confirmée sur un environnement ciblé</h3>
+                        <p>
+                            Des chercheurs rapportent une exécution de code
+                            à distance réussie sur une installation Apache
+                            utilisant PHP 8.4.26.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <span class="timeline-date">27 OCT. 2026</span>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-text">
+                        <h3>Mise à jour de l'alerte CERT-FR</h3>
+                        <p>
+                            Le CERT-FR actualise son bulletin avec des
+                            précisions sur les systèmes concernés et les
+                            mesures de protection.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CORRECTIFS -->
+        <section class="veille-section veille-patches">
+
+            <div class="veille-section-heading">
+                <div>
+                    <span class="section-tag">04 / MESURES DE SÉCURITÉ</span>
+                    <h2>Comment se protéger ?</h2>
+                </div>
+            </div>
+
+            <p class="section-description">
+                La réponse prioritaire consiste à identifier les installations
+                concernées et à appliquer les versions corrigées publiées par
+                le projet PHP.
+            </p>
+
+            <div class="patch-table-wrapper">
+                <table class="patch-table">
+                    <thead>
+                        <tr>
+                            <th>Branche PHP</th>
+                            <th>Version corrigée</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PHP 8.2</td>
+                            <td>8.2.35</td>
+                            <td><span class="patch-status">Mettre à jour</span></td>
+                        </tr>
+                        <tr>
+                            <td>PHP 8.3</td>
+                            <td>8.3.36</td>
+                            <td><span class="patch-status">Mettre à jour</span></td>
+                        </tr>
+                        <tr>
+                            <td>PHP 8.4</td>
+                            <td>8.4.27</td>
+                            <td><span class="patch-status">Mettre à jour</span></td>
+                        </tr>
+                        <tr>
+                            <td>PHP 8.5</td>
+                            <td>8.5.12</td>
+                            <td><span class="patch-status">Mettre à jour</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="security-actions">
+
+                <div class="security-action">
+                    <span>01</span>
+                    <div>
+                        <h3>Identifier les serveurs</h3>
+                        <p>
+                            Recenser les machines et applications qui utilisent PHP.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="security-action">
+                    <span>02</span>
+                    <div>
+                        <h3>Appliquer les correctifs</h3>
+                        <p>
+                            Installer une version corrigée et redémarrer
+                            les processus PHP concernés.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="security-action">
+                    <span>03</span>
+                    <div>
+                        <h3>Surveiller les journaux</h3>
+                        <p>
+                            Rechercher des requêtes inhabituelles et des
+                            comportements suspects sur les serveurs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="security-action">
+                    <span>04</span>
+                    <div>
+                        <h3>Vérifier la sécurité</h3>
+                        <p>
+                            Contrôler les droits des processus, les accès
+                            réseau et l'intégrité des applications.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="patch-warning">
+                Attention : les mesures temporaires ne remplacent pas
+                l'installation des correctifs de sécurité.
+            </p>
+
+        </section>
+
+
+        <!-- AUTRES ARTICLES -->
+        <section class="veille-section">
+
+            <div class="veille-section-heading">
+                <div>
+                    <span class="section-tag">05 / POUR ALLER PLUS LOIN</span>
+                    <h2>Articles et analyses</h2>
+                </div>
+            </div>
+
+            <div class="articles-grid">
+
+                <article class="news-card">
+                    <div class="news-card-image news-image-php">
+                        <img
+                            src="https://www.bleepstatic.com/content/hl-images/2025/03/11/PHP-cracked-hack.jpg"
+                            alt="Illustration d'une faille de sécurité PHP"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="news-card-content">
+                        <span class="article-category">ACTUALITÉ CYBER</span>
+                        <p class="news-date">26 octobre 2026 · BleepingComputer</p>
+                        <h3>Les failles PHP2Shell exploitées dans des attaques réelles</h3>
+                        <p>
+                            Un chercheur rapporte une exploitation réussie
+                            sur un serveur Apache utilisant une version
+                            vulnérable de PHP.
+                        </p>
+                        <a
+                            href="https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/amp/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="article-link"
+                        >
+                            Lire l'article ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-image news-image-analysis">
+                        <div class="news-image-placeholder">
+                            <span>THREAT</span>
+                            <strong>PHP2Shell</strong>
+                            <small>ANALYSE TECHNIQUE</small>
+                        </div>
+                    </div>
+
+                    <div class="news-card-content">
+                        <span class="article-category">ANALYSE TECHNIQUE</span>
+                        <p class="news-date">29 octobre 2026 · Tenable</p>
+                        <h3>Pourquoi une exploitation ne fonctionne pas partout de la même façon</h3>
+                        <p>
+                            L'analyse explique que la réussite d'une
+                            exploitation dépend notamment de la configuration
+                            PHP et de l'environnement ciblé.
+                        </p>
+                        <a
+                            href="https://www.tenable.com/blog/php2shell-one-week-later-why-one-exploit-doesnt-work-everywhere"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="article-link"
+                        >
+                            Lire l'analyse ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-image news-image-cert">
+                        <div class="news-image-placeholder">
+                            <span>CERT-FR</span>
+                            <strong>ALERTE</strong>
+                            <small>CYBERSÉCURITÉ</small>
+                        </div>
+                    </div>
+
+                    <div class="news-card-content">
+                        <span class="article-category">SOURCE OFFICIELLE</span>
+                        <p class="news-date">21 au 27 octobre 2026 · CERT-FR</p>
+                        <h3>Multiples vulnérabilités dans PHP</h3>
+                        <p>
+                            Le bulletin officiel détaille les versions
+                            affectées, les risques et les recommandations
+                            de sécurité.
+                        </p>
+                        <a
+                            href="https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="article-link"
+                        >
+                            Lire le bulletin ↗
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANALYSE PERSONNELLE -->
+        <section class="veille-section">
+
+            <div class="veille-personal-analysis">
+
+                <div>
+                    <span class="section-tag">06 / MON ANALYSE</span>
+                    <h2>Ce que je retiens de cette actualité</h2>
+                </div>
+
+                <div class="personal-analysis-content">
+                    <p>
+                        Cette actualité montre qu'une vulnérabilité présente
+                        dans un composant utilisé par les serveurs web peut
+                        devenir un risque important pour toute une infrastructure.
+                    </p>
+
+                    <p>
+                        Dans le cadre de mon BTS SIO option SISR, je trouve
+                        particulièrement intéressant le rôle de
+                        l'administrateur systèmes et réseaux : identifier
+                        les équipements concernés, vérifier les versions
+                        installées, appliquer les correctifs et surveiller
+                        les événements suspects.
+                    </p>
+
+                    <p>
+                        Je retiens également qu'une mise à jour ne suffit pas
+                        toujours à elle seule : il faut vérifier que les
+                        services ont bien redémarré avec la version corrigée
+                        et contrôler que le serveur n'a pas déjà été compromis.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOURCES -->
+        <section class="veille-section veille-sources">
+
+            <div class="veille-section-heading">
+                <div>
+                    <span class="section-tag">07 / MES SOURCES</span>
+                    <h2>Où je m'informe</h2>
+                </div>
+            </div>
+
+            <div class="sources-list">
+
+                <a href="https://cert.cyber.gouv.fr/"
+                   target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <strong>CERT-FR</strong>
+                        <span>Alertes et avis de sécurité officiels</span>
+                    </div>
+                    <span>↗</span>
+                </a>
+
+                <a href="https://www.php.net/"
+                   target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <strong>PHP.net</strong>
+                        <span>Bulletins de sécurité et versions corrigées</span>
+                    </div>
+                    <span>↗</span>
+                </a>
+
+                <a href="https://www.bleepingcomputer.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <strong>BleepingComputer</strong>
+                        <span>Actualités et enquêtes en cybersécurité</span>
+                    </div>
+                    <span>↗</span>
+                </a>
+
+                <a href="https://www.tenable.com/blog"
+                   target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <strong>Tenable Research</strong>
+                        <span>Analyses techniques et vulnérabilités</span>
+                    </div>
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer">
+        <p>© 2026 semih.dev — Portfolio BTS SIO SISR</p>
+        <p>Veille technologique · Cybersécurité</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

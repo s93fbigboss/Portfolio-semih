@@ -1,0 +1,445 @@
+
+/* =========================================
+   FORMATION ET EXPÉRIENCES
+========================================= */
+
+/* Frise chronologique */
+.timeline {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-left: 35px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 9px;
+    width: 2px;
+    background: linear-gradient(var(--cyan), var(--blue));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 25px;
+    left: -33px;
+    width: 17px;
+    height: 17px;
+    border: 4px solid var(--cyan);
+    border-radius: 50%;
+    background: var(--bg);
+    box-shadow: 0 0 12px rgba(8, 199, 233, 0.3);
+}
+
+.timeline-card,
+.timeline-content {
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-card:hover,
+.timeline-content:hover {
+    border-color: var(--cyan);
+    transform: translateX(5px);
+}
+
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--cyan);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.timeline-card h3,
+.timeline-content h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.timeline-place,
+.timeline-content h3 {
+    margin-bottom: 15px;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.timeline-card p,
+.timeline-content p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.timeline-content ul {
+    margin: 18px 0 18px 20px;
+    color: var(--text);
+}
+
+.timeline-content li {
+    margin-bottom: 9px;
+    padding-left: 5px;
+}
+
+.experience-label {
+    display: inline-block;
+    width: fit-content;
+    margin: 10px 0;
+    padding: 7px 13px;
+    border: 1px solid rgba(8, 199, 233, 0.3);
+    border-radius: 30px;
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.experience-note {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+}
+
+/* =========================================
+   RÉSUMÉ DES EXPÉRIENCES
+========================================= */
+
+.experience-summary {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.experience-summary h2 {
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.summary-card {
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+.summary-card > span {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--cyan);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.summary-card h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.summary-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================================
+   PAGE EXPÉRIENCE
+========================================= */
+
+.experience-main,
+.experience-secondary {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px var(--shadow);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.experience-main:hover,
+.experience-secondary:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+/* En-tête de l'expérience Orange */
+.experience-top {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.experience-logo {
+    width: 130px;
+    height: 100px;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.experience-logo img {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    object-fit: contain;
+}
+
+.experience-heading h2 {
+    margin: 8px 0;
+    font-size: 26px;
+}
+
+.experience-heading h3 {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+/* Présentation */
+.experience-description p,
+.experience-secondary > p {
+    margin-bottom: 15px;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* Missions */
+.experience-missions {
+    margin-top: 28px;
+}
+
+.experience-missions h3,
+.experience-skills h3 {
+    margin-bottom: 15px;
+    color: var(--cyan);
+    font-size: 17px;
+}
+
+.experience-missions ul {
+    padding-left: 22px;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.experience-missions li {
+    margin-bottom: 11px;
+    line-height: 1.7;
+}
+
+/* Compétences */
+.experience-skills {
+    margin-top: 25px;
+}
+
+.experience-skills .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.experience-skills .tags span {
+    display: inline-block;
+    padding: 8px 13px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Images BAFA et menuiserie */
+.experience-icon {
+    width: 130px;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.experience-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #FFFFFF;
+    padding: 8px;
+}
+
+.experience-secondary h3 {
+    margin: 12px 0;
+    font-size: 24px;
+    color: var(--white);
+}
+
+/* Thème clair */
+body.light-theme .experience-main,
+body.light-theme .experience-secondary {
+    background: #FFFFFF;
+    border-color: #E1E9F2;
+    box-shadow: 0 8px 25px rgba(80, 110, 145, 0.07);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-summary h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-main,
+    .experience-secondary {
+        padding: 22px;
+    }
+
+    .experience-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .experience-logo {
+        width: 115px;
+        height: 85px;
+        min-width: 115px;
+    }
+
+    .experience-heading h2 {
+        font-size: 23px;
+    }
+
+    .experience-secondary h3 {
+        font-size: 21px;
+    }
+
+    .summary-card {
+        padding: 22px;
+    }
+
+    .timeline {
+        padding-left: 28px;
+    }
+
+    .timeline-dot {
+        left: -26px;
+    }
+
+    .timeline-card,
+    .timeline-content {
+        padding: 22px;
+    }
+}
+
+/* =========================================
+   CORRECTION ESPACEMENTS PAGE EXPERIENCE
+========================================= */
+
+body.page-experience main > .page-container {
+    min-height: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+body.page-experience main > .page-container .page-heading {
+    margin-bottom: 35px;
+}
+
+body.page-experience main > .page-container:first-child {
+    padding-top: 65px;
+}
+
+
+/* =========================================
+   PAGE FORMATION
+========================================= */
+
+body.page-formation main > .page-container {
+    width: 100%;
+    max-width: 1500px;
+    min-height: auto;
+    padding: 65px 5% 80px;
+}
+
+/* Frise chronologique élargie */
+body.page-formation .timeline {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cartes de formation */
+body.page-formation .timeline-content {
+    padding: 35px 40px;
+}
+
+/* Objectif professionnel */
+.skills-note {
+    width: 100%;
+    max-width: 1200px;
+    margin: 55px auto 0;
+    padding: 35px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.skills-note h2 {
+    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 25px;
+}
+
+.skills-note p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body.page-formation main > .page-container {
+        padding: 45px 20px 60px;
+    }
+
+    body.page-formation .timeline-content {
+        padding: 22px;
+    }
+
+    .skills-note {
+        padding: 22px;
+    }
+
+    .skills-note h2 {
+        font-size: 21px;
+    }
+}
