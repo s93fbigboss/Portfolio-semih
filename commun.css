@@ -1,0 +1,439 @@
+
+/* =====================================================
+   SEMIH.DEV — STYLES COMMUNS
+   Couleurs, navigation, boutons et éléments partagés
+===================================================== */
+
+
+/* =====================================================
+   1. VARIABLES — THÈME SOMBRE
+===================================================== */
+
+:root {
+    --bg: #19182F;
+    --bg-alt: #141426;
+
+    --card: #222238;
+    --card-hover: #2A2A43;
+
+    --cyan: #08C7E9;
+    --blue: #0878E8;
+
+    --white: #F5F5FA;
+    --text: #D2D2DF;
+    --muted: #A5A5B8;
+
+    --border: rgba(255,255,255,.10);
+    --shadow: rgba(0,0,0,.25);
+
+    --header-bg: rgba(25,24,47,.96);
+    --footer-bg: #10101F;
+
+    --gradient: linear-gradient(100deg, var(--blue), var(--cyan));
+}
+
+
+/* =====================================================
+   2. RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background .35s ease, color .35s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.3;
+}
+
+p {
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   3. NAVIGATION
+===================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar {
+    min-height: 76px;
+    padding: 12px 4%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(15px);
+
+    transition: background .35s ease;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--cyan);
+}
+
+.logo:hover {
+    opacity: .85;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 8px 0;
+
+    color: #C1C1D0;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    transition: color .3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--cyan);
+    transition: width .3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--white);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* BOUTON JOUR / NUIT */
+
+.theme-toggle {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--border);
+    border-radius: 50%;
+
+    background: transparent;
+    color: var(--white);
+
+    font-size: 24px;
+    cursor: pointer;
+
+    transition: transform .3s ease,
+                background .3s ease,
+                border-color .3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+    border-color: var(--cyan);
+    background: rgba(8,199,233,.1);
+}
+
+
+/* =====================================================
+   4. ÉLÉMENTS GÉNÉRAUX
+===================================================== */
+
+.page-container {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 75vh;
+
+    margin: 0 auto;
+    padding: 80px 5% 100px;
+}
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-heading {
+    max-width: 850px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.page-heading h1 {
+    margin-bottom: 20px;
+
+    font-size: clamp(34px, 5vw, 55px);
+    font-weight: 900;
+    letter-spacing: -1.5px;
+}
+
+.page-heading h1 span {
+    color: var(--cyan);
+}
+
+.page-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: var(--muted);
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   5. BOUTONS
+===================================================== */
+
+.btn,
+.primary-button {
+    min-height: 45px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 21px;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: transform .3s ease,
+                background .3s ease,
+                color .3s ease;
+}
+
+.btn:hover,
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary,
+.primary-button {
+    background: var(--gradient);
+    color: #FFFFFF;
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover,
+.primary-button:hover {
+    box-shadow: 0 7px 24px rgba(8,199,233,.25);
+}
+
+.btn-ghost {
+    border: 1px solid var(--border);
+    color: var(--white);
+    background: transparent;
+}
+
+.btn-ghost:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+
+/* =====================================================
+   6. PIED DE PAGE
+===================================================== */
+
+.footer,
+footer {
+    min-height: 85px;
+    padding: 22px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background: var(--footer-bg);
+    border-top: 1px solid var(--border);
+}
+
+.footer p,
+footer p {
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* =====================================================
+   7. THÈME CLAIR
+===================================================== */
+
+body.light-theme {
+    --bg: #F7F9FC;
+    --bg-alt: #EDF3FA;
+
+    --card: #FFFFFF;
+    --card-hover: #F1F7FC;
+
+    --cyan: #079FBD;
+    --blue: #4A91D9;
+
+    --white: #34445B;
+    --text: #53647A;
+    --muted: #8492A5;
+
+    --border: #E1E9F2;
+    --shadow: rgba(80,110,145,.08);
+
+    --header-bg: rgba(255,255,255,.96);
+    --footer-bg: #EAF0F7;
+}
+
+
+/* Navigation */
+
+body.light-theme .navbar {
+    background: var(--header-bg);
+    border-bottom: 1px solid #E5ECF4;
+}
+
+body.light-theme .nav-links a {
+    color: #52647B;
+}
+
+body.light-theme .nav-links a:hover,
+body.light-theme .nav-links a.active {
+    color: #079FBD;
+}
+
+
+/* Bouton jour / nuit */
+
+body.light-theme .theme-toggle {
+    color: #52647B;
+    border-color: #D5E0EC;
+}
+
+
+/* Pied de page */
+
+body.light-theme .footer,
+body.light-theme footer {
+    background: #EAF0F7;
+    border-top: 1px solid #DCE5EF;
+}
+
+body.light-theme .footer p,
+body.light-theme footer p {
+    color: #718198;
+}
+
+body.light-theme .footer .logo,
+body.light-theme footer .logo {
+    color: #34445B;
+}
+
+
+/* Boutons */
+
+body.light-theme .btn-ghost {
+    color: #52647B;
+    border-color: #D5E0EC;
+}
+
+body.light-theme .btn-ghost:hover {
+    color: #079FBD;
+    border-color: #079FBD;
+}
+
+
+/* =====================================================
+   8. ANIMATIONS AU DÉFILEMENT
+===================================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

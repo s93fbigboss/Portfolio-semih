@@ -1,0 +1,1277 @@
+
+/* =========================================================
+   SEMIH.DEV — VEILLE TECHNOLOGIQUE
+   Thème : Cybersécurité
+   ========================================================= */
+
+
+/* =========================
+   INTRODUCTION / HERO
+   ========================= */
+
+.page-veille {
+    overflow-x: hidden;
+}
+
+.veille-hero {
+    width: 100%;
+    max-width: 1600px;
+    min-height: 540px;
+    margin: 0 auto;
+    padding: 100px 6% 90px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.veille-hero-content {
+    max-width: 850px;
+}
+
+.veille-overline {
+    margin: 28px 0 18px;
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.veille-hero h1 {
+    margin: 0 0 25px;
+    font-size: clamp(2.6rem, 5vw, 4.7rem);
+    line-height: 1.12;
+    letter-spacing: -2px;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.veille-hero h1 span {
+    color: var(--cyan);
+}
+
+.veille-intro {
+    max-width: 720px;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.veille-hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.veille-hero-tags span {
+    padding: 9px 15px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    background: var(--card);
+}
+
+.veille-hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.veille-visual-card {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    min-height: 350px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 50% 45%, rgba(0, 204, 255, 0.13), transparent 55%),
+        var(--card);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.18);
+}
+
+.visual-label {
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.visual-symbol {
+    width: 100px;
+    height: 100px;
+    margin: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    color: var(--cyan);
+    font-size: 4rem;
+    font-weight: 800;
+    box-shadow: 0 0 35px rgba(0, 204, 255, 0.15);
+}
+
+.veille-visual-card h2 {
+    margin: 0 0 10px;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+.veille-visual-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.visual-date {
+    margin-top: 25px;
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 0.72rem;
+}
+
+
+/* =========================
+   SECTIONS COMMUNES
+   ========================= */
+
+.veille-section {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 75px 6%;
+}
+
+.veille-section:nth-of-type(even) {
+    background: transparent;
+}
+
+.veille-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 38px;
+}
+
+.veille-section-heading h2,
+.veille-personal-analysis h2 {
+    margin: 15px 0 0;
+    color: var(--text);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    letter-spacing: -1px;
+}
+
+.veille-date {
+    color: var(--text-secondary);
+    font-family: "Fira Code", monospace;
+    font-size: 0.8rem;
+}
+
+.section-description {
+    max-width: 850px;
+    margin: -15px 0 35px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+
+/* =========================
+   ARTICLE PRINCIPAL
+   ========================= */
+
+.veille-feature {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: var(--card);
+}
+
+.veille-feature-image {
+    position: relative;
+    min-height: 440px;
+    overflow: hidden;
+    background: #111827;
+}
+
+.veille-feature-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.veille-feature:hover .veille-feature-image img {
+    transform: scale(1.04);
+}
+
+.image-credit {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 0.68rem;
+}
+
+.veille-feature-content {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+}
+
+.article-category {
+    display: inline-block;
+    width: fit-content;
+    padding: 7px 11px;
+    border-radius: 5px;
+    background: rgba(0, 204, 255, 0.1);
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.veille-feature-content h3 {
+    margin: 0 0 20px;
+    color: var(--text);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.35;
+}
+
+.veille-feature-content > p {
+    margin: 0 0 15px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 0.94rem;
+}
+
+.article-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.article-facts div {
+    padding: 16px 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.04);
+}
+
+.article-facts strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 1.3rem;
+}
+
+.article-facts span {
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+}
+
+.article-link {
+    width: fit-content;
+    margin-top: 12px;
+    color: var(--cyan);
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.article-link:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   EXPLICATION DE LA MENACE
+   ========================= */
+
+.veille-explanation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.explanation-card {
+    position: relative;
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--card);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.explanation-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+.explanation-number {
+    display: block;
+    margin-bottom: 25px;
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.explanation-card h3 {
+    margin: 0 0 15px;
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+.explanation-card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.explanation-reference {
+    display: block;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 0.7rem;
+}
+
+
+/* =========================
+   CHRONOLOGIE
+   ========================= */
+
+.veille-timeline {
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.veille-timeline::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 185px;
+    width: 1px;
+    background: var(--border);
+}
+
+.timeline-entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: 150px 30px 1fr;
+    gap: 20px;
+    padding-bottom: 38px;
+}
+
+.timeline-date {
+    padding-top: 3px;
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+    width: 11px;
+    height: 11px;
+    margin: 5px auto 0;
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    background: var(--bg);
+    box-shadow: 0 0 12px rgba(0, 204, 255, 0.25);
+}
+
+.timeline-text h3 {
+    margin: 0 0 9px;
+    color: var(--text);
+    font-size: 1.05rem;
+}
+
+.timeline-text p {
+    max-width: 700px;
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   TABLEAU DES CORRECTIFS
+   ========================= */
+
+.patch-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--card);
+}
+
+.patch-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.patch-table th {
+    padding: 20px 25px;
+    background: rgba(0, 204, 255, 0.06);
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.patch-table td {
+    padding: 19px 25px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+}
+
+.patch-table td:first-child {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.patch-status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: rgba(0, 204, 255, 0.1);
+    color: var(--cyan);
+    font-size: 0.73rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   ACTIONS DE SÉCURITÉ
+   ========================= */
+
+.security-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.security-action {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    background: var(--card);
+}
+
+.security-action > span {
+    flex-shrink: 0;
+    color: var(--cyan);
+    font-family: "Fira Code", monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.security-action h3 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.security-action p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.86rem;
+    line-height: 1.7;
+}
+
+.patch-warning {
+    margin-top: 25px;
+    padding: 16px 20px;
+    border-left: 3px solid var(--cyan);
+    background: rgba(0, 204, 255, 0.06);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CARTES ARTICLES
+   ========================= */
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 23px;
+}
+
+.news-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--card);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+.news-card-image {
+    height: 205px;
+    overflow: hidden;
+    background: #111827;
+}
+
+.news-card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.news-card:hover .news-card-image img {
+    transform: scale(1.05);
+}
+
+.news-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background:
+        radial-gradient(circle at center, rgba(0, 204, 255, 0.16), transparent 60%),
+        #101a2a;
+    color: #fff;
+}
+
+.news-image-placeholder span {
+    color: #00ccff;
+    font-family: "Fira Code", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+.news-image-placeholder strong {
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.news-image-placeholder small {
+    color: #9ba9bb;
+    font-family: "Fira Code", monospace;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+}
+
+.news-card-content {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-date {
+    margin: 14px 0 10px;
+    color: var(--text-secondary);
+    font-size: 0.73rem;
+}
+
+.news-card-content h3 {
+    margin: 0 0 14px;
+    color: var(--text);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.news-card-content > p:not(.news-date) {
+    margin: 0 0 15px;
+    color: var(--text-secondary);
+    font-size: 0.86rem;
+    line-height: 1.8;
+}
+
+.news-card-content .article-link {
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+
+/* =========================
+   ANALYSE PERSONNELLE
+   ========================= */
+
+.veille-personal-analysis {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 55px;
+    padding: 45px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background:
+        radial-gradient(circle at top left, rgba(0, 204, 255, 0.08), transparent 50%),
+        var(--card);
+}
+
+.personal-analysis-content p {
+    margin: 0 0 18px;
+    color: var(--text-secondary);
+    font-size: 0.94rem;
+    line-height: 1.9;
+}
+
+.personal-analysis-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   SOURCES
+   ========================= */
+
+.sources-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+}
+
+.sources-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 23px 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    transition: padding 0.2s ease, color 0.2s ease;
+}
+
+.sources-list a:hover {
+    padding-left: 20px;
+    color: var(--cyan);
+}
+
+.sources-list a div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sources-list strong {
+    font-size: 1rem;
+}
+
+.sources-list a div span {
+    color: var(--text-secondary);
+    font-size: 0.83rem;
+}
+
+.sources-list a > span {
+    color: var(--cyan);
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   PIED DE PAGE
+   ========================= */
+
+.page-veille .footer {
+    margin-top: 0;
+}
+
+
+/* =========================
+   RESPONSIVE TABLETTE
+   ========================= */
+
+@media (max-width: 1050px) {
+
+    .veille-hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding-top: 75px;
+    }
+
+    .veille-hero-content {
+        max-width: 100%;
+    }
+
+    .veille-hero-visual {
+        justify-content: flex-start;
+    }
+
+    .veille-visual-card {
+        max-width: 100%;
+        min-height: 270px;
+    }
+
+    .veille-explanation-grid,
+    .articles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .veille-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .veille-feature-image,
+    .veille-feature-image img {
+        min-height: 350px;
+        max-height: 420px;
+    }
+
+    .veille-personal-analysis {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+   ========================= */
+
+@media (max-width: 650px) {
+
+    .veille-hero {
+        min-height: auto;
+        padding: 55px 22px 50px;
+    }
+
+    .veille-hero h1 {
+        font-size: 2.45rem;
+        letter-spacing: -1.2px;
+    }
+
+    .veille-intro {
+        font-size: 0.94rem;
+    }
+
+    .veille-hero-tags {
+        gap: 8px;
+    }
+
+    .veille-hero-tags span {
+        font-size: 0.7rem;
+    }
+
+    .veille-visual-card {
+        min-height: 260px;
+        padding: 25px;
+    }
+
+    .veille-section {
+        padding: 50px 22px;
+    }
+
+    .veille-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .veille-section-heading h2,
+    .veille-personal-analysis h2 {
+        font-size: 1.8rem;
+    }
+
+    .veille-feature-image,
+    .veille-feature-image img {
+        min-height: 230px;
+    }
+
+    .veille-feature-content {
+        padding: 25px 22px;
+    }
+
+    .veille-feature-content h3 {
+        font-size: 1.45rem;
+    }
+
+    .article-facts {
+        gap: 7px;
+    }
+
+    .article-facts div {
+        padding: 12px 7px;
+    }
+
+    .article-facts strong {
+        font-size: 1.05rem;
+    }
+
+    .article-facts span {
+        font-size: 0.62rem;
+    }
+
+    .veille-explanation-grid,
+    .articles-grid,
+    .security-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .explanation-card {
+        padding: 25px;
+    }
+
+    .veille-timeline::before {
+        left: 5px;
+    }
+
+    .timeline-entry {
+        grid-template-columns: 12px 1fr;
+        gap: 15px;
+        padding-bottom: 30px;
+    }
+
+    .timeline-date {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .timeline-marker {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        margin: 4px 0 0;
+    }
+
+    .timeline-text {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .patch-table th,
+    .patch-table td {
+        padding: 15px 12px;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
+    .security-action {
+        padding: 20px;
+    }
+
+    .veille-personal-analysis {
+        padding: 27px 22px;
+    }
+
+    .news-card-image {
+        height: 190px;
+    }
+}
+
+
+/* =========================
+   PETITS ÉCRANS
+   ========================= */
+
+@media (max-width: 380px) {
+
+    .veille-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .article-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .article-facts div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+/* =========================================================
+   NOUVELLE IDENTITÉ — CYBERSECURITY
+   Noir / Vert néon / Blanc
+   ========================================================= */
+
+body.page-veille {
+    --cyan: #00ff66;
+    --bg: #050807;
+    --card: #0b120e;
+    --border: rgba(0, 255, 102, 0.20);
+    --text: #f3fff6;
+    --text-secondary: #a0b3a5;
+
+    background: #050807;
+    color: #f3fff6;
+}
+
+.page-veille .navbar {
+    background: rgba(5, 8, 7, 0.96);
+    border-bottom: 1px solid rgba(0, 255, 102, 0.16);
+}
+
+.page-veille .logo-dot,
+.page-veille .nav-links a.active,
+.page-veille .nav-links a:hover,
+.page-veille .section-tag,
+.page-veille .veille-overline {
+    color: #00ff66;
+}
+
+.page-veille .nav-contact {
+    border-color: #00ff66;
+    color: #00ff66;
+}
+
+.page-veille .nav-contact:hover {
+    background: #00ff66;
+    color: #050807;
+}
+
+.page-veille .veille-hero {
+    position: relative;
+    background:
+        radial-gradient(ellipse at 80% 40%, rgba(0,255,102,.08), transparent 45%),
+        #050807;
+}
+
+.page-veille .veille-hero h1 span {
+    color: #00ff66;
+}
+
+.page-veille .veille-hero-tags span,
+.page-veille .veille-visual-card,
+.page-veille .veille-feature,
+.page-veille .explanation-card,
+.page-veille .news-card,
+.page-veille .security-action,
+.page-veille .patch-table-wrapper {
+    background-color: #0b120e;
+    border-color: rgba(0, 255, 102, 0.18);
+}
+
+.page-veille .veille-visual-card {
+    box-shadow: 0 20px 65px rgba(0, 255, 102, 0.07);
+}
+
+.page-veille .visual-symbol {
+    border-color: #00ff66;
+    color: #00ff66;
+    box-shadow: 0 0 35px rgba(0, 255, 102, 0.16);
+}
+
+.page-veille .article-category,
+.page-veille .patch-status {
+    color: #00ff66;
+    background: rgba(0, 255, 102, 0.08);
+}
+
+.page-veille .article-link,
+.page-veille .article-facts strong,
+.page-veille .explanation-number,
+.page-veille .timeline-date,
+.page-veille .security-action > span,
+.page-veille .sources-list a:hover {
+    color: #00ff66;
+}
+
+.page-veille .article-facts div {
+    background: #080e0a;
+    border-color: rgba(0, 255, 102, 0.16);
+}
+
+.page-veille .patch-table th {
+    background: rgba(0, 255, 102, 0.07);
+}
+
+.page-veille .patch-warning {
+    border-left-color: #00ff66;
+    background: rgba(0, 255, 102, 0.05);
+}
+
+.page-veille .veille-personal-analysis {
+    background:
+        radial-gradient(circle at top left, rgba(0, 255, 102, 0.07), transparent 50%),
+        #0b120e;
+    border-color: rgba(0, 255, 102, 0.2);
+}
+
+.page-veille .footer {
+    border-top: 1px solid rgba(0, 255, 102, 0.16);
+}
+
+
+/* =========================================================
+   ÉCRAN D'INTRODUCTION
+   ========================================================= */
+
+.hacking-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #020503;
+    color: #00ff66;
+    font-family: "Fira Code", monospace;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.65s ease, visibility 0.65s ease;
+}
+
+.hacking-intro.intro-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.hacking-topbar,
+.hacking-footer {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px 5%;
+    color: #7dffad;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid rgba(0,255,102,.16);
+}
+
+.hacking-footer {
+    border-top: 1px solid rgba(0,255,102,.16);
+    border-bottom: none;
+    color: #668b72;
+}
+
+.terminal-status {
+    color: #00ff66;
+}
+
+.matrix-layer {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0.22;
+    pointer-events: none;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 27px,
+            rgba(0,255,102,.035) 28px
+        );
+}
+
+.matrix-character {
+    position: absolute;
+    top: -100px;
+    color: #00ff66;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: pre;
+    text-shadow: 0 0 8px rgba(0,255,102,.8);
+    animation: matrix-fall linear infinite;
+}
+
+@keyframes matrix-fall {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(120vh); }
+}
+
+.hacking-content {
+    position: relative;
+    z-index: 2;
+    width: min(650px, 90%);
+    margin: auto;
+    text-align: center;
+}
+
+.terminal-icon {
+    margin-bottom: 20px;
+    color: #00ff66;
+    font-size: 3.5rem;
+    text-shadow: 0 0 25px rgba(0,255,102,.6);
+}
+
+.terminal-small {
+    color: #78c990;
+    font-size: 0.72rem;
+    letter-spacing: 4px;
+}
+
+.terminal-title {
+    margin: 20px 0 35px;
+    color: #f3fff6;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    letter-spacing: 3px;
+}
+
+.terminal-cursor {
+    color: #00ff66;
+    animation: cursor-blink .7s infinite;
+}
+
+@keyframes cursor-blink {
+    50% { opacity: 0; }
+}
+
+.terminal-console {
+    padding: 24px;
+    border: 1px solid rgba(0,255,102,.23);
+    border-radius: 10px;
+    background: rgba(0, 15, 6, .8);
+    text-align: left;
+    box-shadow: 0 0 35px rgba(0,255,102,.06);
+}
+
+.terminal-console p {
+    margin: 10px 0;
+    color: #a4c7ad;
+    font-size: 0.82rem;
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.terminal-console p.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.terminal-console p span {
+    color: #00ff66;
+}
+
+.terminal-console .terminal-success {
+    color: #00ff66;
+    font-weight: 700;
+}
+
+.terminal-progress {
+    height: 4px;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #142019;
+}
+
+.terminal-progress-fill {
+    width: 0;
+    height: 100%;
+    background: #00ff66;
+    box-shadow: 0 0 12px #00ff66;
+    transition: width .25s ease;
+}
+
+.terminal-loading {
+    margin-top: 15px;
+    color: #77a986;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.skip-intro {
+    margin-top: 30px;
+    padding: 12px 18px;
+    border: 1px solid rgba(0,255,102,.4);
+    border-radius: 5px;
+    background: transparent;
+    color: #00ff66;
+    font-family: inherit;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background .2s ease, color .2s ease;
+}
+
+.skip-intro:hover {
+    background: #00ff66;
+    color: #020503;
+}
+
+
+/* =========================================================
+   ACCESSIBILITÉ ET MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+    .hacking-topbar,
+    .hacking-footer {
+        padding: 15px 18px;
+        font-size: 0.56rem;
+        letter-spacing: .6px;
+    }
+
+    .terminal-console {
+        padding: 16px;
+    }
+
+    .terminal-console p {
+        font-size: 0.68rem;
+    }
+
+    .terminal-title {
+        letter-spacing: 1px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hacking-intro,
+    .matrix-character,
+    .terminal-cursor {
+        animation: none !important;
+        transition: none !important;
+    }
+}

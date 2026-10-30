@@ -1,0 +1,145 @@
+
+/* =========================================
+   RESPONSIVE GLOBAL - SEMIH.DEV
+========================================= */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .page-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero-inner {
+        gap: 35px;
+    }
+
+    .intro-copy h1 {
+        font-size: 42px;
+    }
+
+    .quick-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Tablettes et petits écrans */
+@media (max-width: 850px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .portrait {
+        margin: 0 auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .code-window {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-summary {
+        margin-top: 45px;
+    }
+}
+
+/* Petits mobiles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .page-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .intro-copy h1 {
+        font-size: 34px;
+    }
+
+    .intro-copy .job {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .portrait {
+        width: 210px;
+        height: 210px;
+    }
+
+    .code-window {
+        font-size: 11px;
+        overflow-x: auto;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .footer,
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .back-top {
+        right: 18px;
+        bottom: 18px;
+    }
+}
+
+/* Très petits mobiles */
+@media (max-width: 400px) {
+    .intro-copy h1 {
+        font-size: 29px;
+    }
+
+    .portrait {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -4,74 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#19182f">
-    <meta name="description" content="Démonstration des épreuves et éléments de preuve du BTS SIO SISR de Semih Dusunceli.">
-    <title>Épreuves du BTS | Semih.dev</title>
+    <meta name="description" content="Démonstration des épreuves du BTS SIO SISR de Semih Dusunceli : réseaux, systèmes et expérience professionnelle.">
+
+    <title>Démonstration des épreuves | Semih.dev</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/commun.css">
     <link rel="stylesheet" href="css/epreuves.css">
     <link rel="stylesheet" href="css/responsive.css">
+
     <script src="script.js" defer></script>
 </head>
-<body>
-<header class="header">
-    <nav class="navbar">
+
+<body id="top" class="epreuves-page">
+
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo" href="index.html">semih<span class="logo-dot">.</span>dev</a>
+
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="profil.html">Profil</a>
+                <a href="epreuves.html" class="active" aria-current="page">Démonstration des épreuves</a>
+                <a href="formation.html">Formation</a>
+                <a href="experience.html">Expérience</a>
+                <a href="projets.html">Projets</a>
+                <a href="competences.html">Compétences</a>
+                <a href="veille.html">Veille technologique</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Changer de thème" aria-pressed="false">
+                    <span id="theme-icon" aria-hidden="true">☀</span>
+                </button>
+                <a href="contact.html" class="nav-contact">Me contacter ↗</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="epreuves-hero">
+            <div class="epreuves-container">
+                <div class="epreuves-kicker reveal">
+                    <span class="kicker-line"></span>
+                    BTS SIO · OPTION SISR
+                    <span class="kicker-index">PORTFOLIO / 03</span>
+                </div>
+
+                <div class="epreuves-hero-grid">
+                    <div class="epreuves-intro reveal">
+                        <p class="section-tag">MON DOSSIER DE PREUVES</p>
+                        <h1>Démonstration<br>des <span>épreuves.</span></h1>
+                        <p class="epreuves-lead">
+                            Cette page rassemble progressivement les travaux, réalisations et documents
+                            qui permettent d'illustrer les compétences développées pendant ma formation.
+                        </p>
+                    </div>
+
+                    <aside class="epreuves-side-note reveal" aria-label="Démarche de travail">
+                        <span class="side-note-number">03</span>
+                        <span class="side-note-label">APPRENDRE / CONFIGURER / VÉRIFIER</span>
+                        <p>Du cours à la mise en pratique.</p>
+                        <span class="side-note-code">SISR — 2026</span>
+                    </aside>
+                </div>
+
+                <div class="epreuves-method reveal">
+                    <span class="method-label">MA DÉMARCHE</span>
+                    <p>
+                        Comprendre un besoin, préparer une solution, la mettre en œuvre,
+                        effectuer des tests et expliquer les résultats obtenus.
+                    </p>
+                    <span class="method-arrow" aria-hidden="true">↓</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="epreuves-content" aria-labelledby="preuves-title">
+            <div class="epreuves-container">
+                <div class="epreuves-section-heading reveal">
+                    <div>
+                        <p class="section-tag">LES DOMAINES DE COMPÉTENCES</p>
+                        <h2 id="preuves-title">Trois axes.<br><span>Des preuves concrètes.</span></h2>
+                    </div>
+                    <p class="heading-aside">Sélection de travaux et d'expériences liés à mon parcours en BTS SIO SISR.</p>
+                </div>
+
+                <div class="epreuves-list">
+                    <article class="epreuve-card reveal" data-epreuve-card>
+                        <div class="epreuve-card-index">
+                            <span class="epreuve-number">01</span>
+                            <span class="epreuve-category">RÉSEAUX</span>
+                        </div>
+                        <div class="epreuve-card-main">
+                            <p class="epreuve-overline">INFRASTRUCTURE & CONFIGURATION</p>
+                            <h3>Construire et connecter.</h3>
+                            <p>
+                                Travaux de réseau réalisés en environnement pédagogique : segmentation,
+                                VLAN, liens trunk, routage inter-VLAN et tests de connectivité.
+                            </p>
+                            <div class="epreuve-tags">
+                                <span>VLAN</span><span>TRUNK</span><span>ROUTAGE</span><span>PACKET TRACER</span>
+                            </div>
+                            <a href="projets.html" class="epreuve-link">Voir les projets réseau <span>↗</span></a>
+                        </div>
+                        <div class="epreuve-card-mark" aria-hidden="true">NET<span>_01</span></div>
+                    </article>
+
+                    <article class="epreuve-card reveal" data-epreuve-card>
+                        <div class="epreuve-card-index">
+                            <span class="epreuve-number">02</span>
+                            <span class="epreuve-category">SYSTÈMES</span>
+                        </div>
+                        <div class="epreuve-card-main">
+                            <p class="epreuve-overline">INSTALLATION & ADMINISTRATION</p>
+                            <h3>Installer et administrer.</h3>
+                            <p>
+                                Travaux pratiques autour des systèmes, de l'installation de machines
+                                virtuelles et de la découverte des services d'infrastructure.
+                            </p>
+                            <div class="epreuve-tags">
+                                <span>DEBIAN</span><span>LINUX</span><span>VMWARE</span><span>SERVICES</span>
+                            </div>
+                            <a href="competences.html" class="epreuve-link">Voir mes compétences <span>↗</span></a>
+                        </div>
+                        <div class="epreuve-card-mark" aria-hidden="true">SYS<span>_02</span></div>
+                    </article>
+
+                    <article class="epreuve-card reveal" data-epreuve-card>
+                        <div class="epreuve-card-index">
+                            <span class="epreuve-number">03</span>
+                            <span class="epreuve-category">ENTREPRISE</span>
+                        </div>
+                        <div class="epreuve-card-main">
+                            <p class="epreuve-overline">EXPÉRIENCE PROFESSIONNELLE</p>
+                            <h3>Découvrir le terrain.</h3>
+                            <p>
+                                Présentation de mon alternance chez Orange, de mon rôle de pilote
+                                d'activité et de mon environnement professionnel.
+                            </p>
+                            <div class="epreuve-tags">
+                                <span>ORANGE</span><span>ALTERNANCE</span><span>FIBRE</span><span>SUPERVISION</span>
+                            </div>
+                            <a href="experience.html" class="epreuve-link">Voir mon expérience <span>↗</span></a>
+                        </div>
+                        <div class="epreuve-card-mark" aria-hidden="true">PRO<span>_03</span></div>
+                    </article>
+                </div>
+
+                <div class="epreuves-note reveal">
+                    <span class="note-icon">i</span>
+                    <p>
+                        Les comptes rendus, captures et documents justificatifs seront ajoutés au fur
+                        et à mesure de leur finalisation. Aucun résultat non vérifié n'est présenté comme validé.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <a href="index.html" class="logo">semih<span class="logo-dot">.</span>dev</a>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="profil.html">Profil</a>
-            <a href="epreuves.html" class="active" aria-current="page">Démonstration des épreuves</a>
-            <a href="formation.html">Formation</a>
-            <a href="experience.html">Expérience</a>
-            <a href="projets.html">Projets</a>
-            <a href="competences.html">Compétences</a>
-            <a href="veille.html">Veille technologique</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="nav-actions">
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Changer de thème" aria-pressed="false"><span id="theme-icon">☀</span></button>
-            <a href="contact.html" class="nav-contact">Me contacter ↗</a>
-        </div>
-    </nav>
-</header>
-<main class="page-container epreuves-page">
-    <div class="page-heading">
-        <span class="section-tag">BTS SIO · OPTION SISR</span>
-        <h1>Démonstration des <span>épreuves</span></h1>
-        <p>Cette page rassemble progressivement les travaux, réalisations et documents qui permettent d'illustrer les compétences développées pendant ma formation.</p>
-    </div>
-    <section class="epreuves-intro">
-        <p class="eyebrow">MON DOSSIER DE PREUVES</p>
-        <h2>Du cours à la mise en pratique.</h2>
-        <p>Les éléments présentés ici ont vocation à montrer ma démarche : comprendre un besoin, préparer une solution, la mettre en œuvre, effectuer des tests et expliquer les résultats obtenus.</p>
-    </section>
-    <section class="epreuves-grid" aria-label="Éléments de démonstration">
-        <article class="epreuve-card">
-            <span class="epreuve-number">01 / RÉSEAUX</span>
-            <h2>Infrastructure et configuration</h2>
-            <p>Travaux de réseau réalisés en environnement pédagogique : segmentation, VLAN, liens trunk, routage inter-VLAN et tests de connectivité.</p>
-            <a href="projets.html">Voir les projets réseau ↗</a>
-        </article>
-        <article class="epreuve-card">
-            <span class="epreuve-number">02 / SYSTÈMES</span>
-            <h2>Installation et administration</h2>
-            <p>Travaux pratiques autour des systèmes, de l'installation de machines virtuelles et de la découverte des services d'infrastructure.</p>
-            <a href="competences.html">Voir mes compétences ↗</a>
-        </article>
-        <article class="epreuve-card">
-            <span class="epreuve-number">03 / ENTREPRISE</span>
-            <h2>Expérience professionnelle</h2>
-            <p>Présentation de mon alternance chez Orange, de mon rôle de pilote d'activité et de mon environnement professionnel.</p>
-            <a href="experience.html">Voir mon expérience ↗</a>
-        </article>
-    </section>
-    <p class="epreuves-note">Les comptes rendus, captures et documents justificatifs seront ajoutés au fur et à mesure de leur finalisation. Aucun résultat non vérifié n'est présenté comme validé.</p>
-</main>
-<footer class="footer">
-    <a href="index.html" class="logo">semih<span class="logo-dot">.</span>dev</a>
-    <p>© <span id="current-year"></span> Semih Dusunceli · Portfolio</p>
-    <a href="#top" class="back-top">Retour en haut ↑</a>
-</footer>
+        <p>© <span id="current-year"></span> Semih Dusunceli · Portfolio</p>
+        <a href="#top" class="back-top">Retour en haut ↑</a>
+    </footer>
+
 </body>
 </html>

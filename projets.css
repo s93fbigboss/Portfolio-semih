@@ -1,0 +1,242 @@
+
+/* =========================================
+   PAGE PROJETS - SEMIH.DEV
+========================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Cartes de projets */
+.project-card {
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+/* Image du projet */
+.project-image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+/* Zone de contenu */
+.project-info {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-info > small {
+    color: var(--cyan);
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.project-info h3 {
+    font-size: 21px;
+    line-height: 1.45;
+    margin: 14px 0;
+}
+
+.project-info p {
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.project-info h4 {
+    color: var(--cyan);
+    font-size: 15px;
+    margin: 20px 0 10px;
+}
+
+.project-info ul {
+    padding-left: 20px;
+    margin: 5px 0 10px;
+    color: var(--text);
+}
+
+.project-info li {
+    padding-left: 4px;
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+/* Technologies et compétences */
+.project-info .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 8px;
+}
+
+.project-info .tags span {
+    display: inline-block;
+    padding: 8px 13px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Statuts des projets */
+.project-status {
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1px solid rgba(8, 199, 233, 0.4);
+    border-radius: 20px;
+    color: var(--cyan);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.status-progress {
+    border-color: rgba(255, 189, 46, 0.4);
+    color: #FFBD2E;
+}
+
+.status-done {
+    border-color: rgba(40, 200, 64, 0.4);
+    color: #37D67A;
+}
+
+.status-planned {
+    border-color: rgba(8, 199, 233, 0.4);
+    color: var(--cyan);
+}
+
+/* Numéro et icône du projet */
+.project-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.project-number {
+    color: var(--cyan);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.project-icon {
+    margin: 25px 0 18px;
+    font-size: 45px;
+}
+
+/* Document associé au projet */
+.project-document {
+    margin-top: auto;
+    padding-top: 22px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Zone sans image */
+.project-placeholder {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+    color: var(--cyan);
+    font-family: 'Fira Code', monospace;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Message de fin de page */
+.project-message {
+    max-width: 850px;
+    margin: 75px auto 0;
+    padding: 40px;
+    text-align: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.project-message h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.project-message h2 span {
+    color: var(--cyan);
+}
+
+.project-message p {
+    color: var(--muted);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-message {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-image,
+    .project-placeholder {
+        height: 190px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 19px;
+    }
+
+    .project-message h2 {
+        font-size: 24px;
+    }
+}

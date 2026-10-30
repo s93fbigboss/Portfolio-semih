@@ -1,0 +1,271 @@
+
+/* =========================================
+   PAGE COMPÉTENCES - SEMIH.DEV
+========================================= */
+
+/* Conteneur */
+.skills-page {
+    padding-bottom: 80px;
+}
+
+/* Introduction */
+.skills-intro {
+    max-width: 850px;
+    margin: 20px auto 55px;
+}
+
+.skills-intro h2 {
+    color: var(--white);
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.skills-intro p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Liste des domaines */
+.skills-list {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 55px minmax(0, 1fr) 100px;
+    gap: 25px;
+    align-items: start;
+    padding: 38px 12px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.25s ease;
+}
+
+.skill-row:hover {
+    background: var(--card-hover);
+}
+
+/* Numéros */
+.skill-number {
+    color: var(--cyan);
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+/* Contenu */
+.skill-content {
+    min-width: 0;
+}
+
+.skill-content > h2 {
+    color: var(--white);
+    font-size: 20px;
+    margin: 0 0 25px;
+}
+
+/* Sous-parties */
+.skill-subpart {
+    margin-bottom: 23px;
+    padding-left: 16px;
+    border-left: 2px solid var(--border);
+    transition: border-color 0.25s ease;
+}
+
+.skill-subpart:hover {
+    border-left-color: var(--cyan);
+}
+
+.skill-subpart h3 {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.skill-subpart p {
+    max-width: 750px;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* Niveaux */
+.skill-level {
+    display: inline-block;
+    margin-top: 3px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: var(--cyan);
+    background: rgba(8, 199, 233, 0.10);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.skill-theory {
+    color: var(--muted);
+    background: var(--bg-alt);
+}
+
+/* Catégories à droite */
+.skill-category {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-align: right;
+    padding-top: 8px;
+}
+
+/* Outils */
+.skills-tools {
+    max-width: 1250px;
+    margin: 55px auto 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+}
+
+.skills-tools .section-tag {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tools-list span {
+    padding: 10px 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    background: var(--card);
+    font-size: 13px;
+    transition: 0.25s ease;
+}
+
+.tools-list span:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+/* Conclusion */
+.skills-footer {
+    max-width: 1250px;
+    margin: 45px auto 0;
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.skills-footer h2 {
+    color: var(--white);
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.skills-footer p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.skills-footer .primary-button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+    .skill-row {
+        grid-template-columns: 45px minmax(0, 1fr) 80px;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skill-row {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 14px;
+        padding: 28px 8px;
+    }
+
+    .skill-number {
+        font-size: 19px;
+    }
+
+    .skill-content > h2 {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .skill-subpart {
+        padding-left: 12px;
+        margin-bottom: 20px;
+    }
+
+    .skill-subpart h3 {
+        font-size: 14px;
+    }
+
+    .skill-subpart p {
+        font-size: 13px;
+    }
+
+    .skill-category {
+        grid-column: 2;
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .skills-intro h2 {
+        font-size: 21px;
+    }
+
+    .skills-footer {
+        padding: 22px;
+    }
+}
+
+/* =========================================
+   ÉLARGISSEMENT DE LA PAGE COMPÉTENCES
+========================================= */
+
+.skills-page {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.skills-intro {
+    max-width: 1100px;
+    margin-left: 0;
+}
+
+.skills-list {
+    width: 100%;
+    max-width: none;
+}
+
+.skills-tools {
+    width: 100%;
+    max-width: none;
+}
+
+.skills-footer {
+    width: 100%;
+    max-width: none;
+}

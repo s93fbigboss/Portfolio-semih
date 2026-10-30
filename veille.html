@@ -1,54 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#19182f">
     <meta name="description" content="Veille technologique de Semih sur la cybersécurité, les vulnérabilités et la protection des infrastructures informatiques.">
     <title>Veille technologique | semih.dev</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/commun.css">
     <link rel="stylesheet" href="css/veille.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="script.js" defer></script>
 </head>
+
 <body class="page-veille">
-<header class="header">
-    <nav class="navbar">
-        <a href="index.html" class="logo">semih<span class="logo-dot">.</span>dev</a>
-        <div class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="profil.html">Profil</a>
-                <a href="epreuves.html">Démonstration des épreuves</a>
-                <a href="formation.html">Formation</a>
-                <a href="experience.html">Expérience</a>
-                <a href="projets.html">Projets</a>
-                <a href="competences.html">Compétences</a>
-                <a href="veille.html" class="active" aria-current="page">Veille technologique</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        <div class="nav-actions">
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Changer de thème" aria-pressed="false">
-                <span id="theme-icon" aria-hidden="true">☀</span>
-            </button>
-            <a href="contact.html" class="nav-contact">Me contacter ↗</a>
-        </div>
-    </nav>
-</header>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            semih<span class="logo-dot">.</span>dev
+        </a>
+
+        <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="profil.html">Profil</a>
+    <a href="epreuves.html">Démonstration des épreuves</a>
+    <a href="formation.html">Formation</a>
+    <a href="experience.html">Expérience</a>
+    <a href="projets.html">Projets</a>
+    <a href="competences.html">Compétences</a>
+    <a href="veille.html" class="active">Veille technologique</a>
+</nav>
 
 <!-- INTRO HACKING -->
 <div class="hacking-intro" id="hacking-intro">
+
     <div class="hacking-topbar">
         <span>SEMIH.DEV // CYBERSECURITY TERMINAL</span>
         <span class="terminal-status">SYSTEM ONLINE</span>
     </div>
+
     <div class="matrix-layer" id="matrix-layer"></div>
+
     <div class="hacking-content">
         <div class="terminal-icon">▣</div>
+
         <p class="terminal-small">SECURE CONNECTION // 2026</p>
-        <h1 class="terminal-title">INITIALISATION<span class="terminal-cursor">_</span></h1>
+
+        <h1 class="terminal-title">
+            INITIALISATION<span class="terminal-cursor">_</span>
+        </h1>
+
         <div class="terminal-console" id="terminal-console">
             <p><span>[ 01 ]</span> Initialisation du système...</p>
             <p><span>[ 02 ]</span> Chargement des protocoles de sécurité...</p>
@@ -56,15 +57,35 @@
             <p><span>[ 04 ]</span> Vérification des accès...</p>
             <p class="terminal-success">[ 05 ] ACCÈS AUTORISÉ</p>
         </div>
-        <div class="terminal-progress"><div class="terminal-progress-fill" id="terminal-progress-fill"></div></div>
-        <p class="terminal-loading" id="terminal-loading">VEUILLEZ PATIENTER...</p>
-        <button class="skip-intro" id="skip-intro" type="button">PASSER L'INTRODUCTION ↗</button>
+
+        <div class="terminal-progress">
+            <div class="terminal-progress-fill" id="terminal-progress-fill"></div>
+        </div>
+
+        <p class="terminal-loading" id="terminal-loading">
+            VEUILLEZ PATIENTER...
+        </p>
+
+        <button class="skip-intro" id="skip-intro">
+            PASSER L'INTRODUCTION ↗
+        </button>
     </div>
+
     <div class="hacking-footer">
         <span>ENCRYPTED CONNECTION</span>
-        <span>SEMIH.DEV © 2026</span>
+        <span>SEMih.DEV © 2026</span>
     </div>
 </div>
+
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                ◐
+            </button>
+            <a href="contact.html" class="nav-contact">Me contacter ↗</a>
+        </div>
+    </header>
+
 
     <main>
 
