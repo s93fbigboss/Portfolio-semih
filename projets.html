@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#19182f">
+
+    <meta name="description" content="Découvrez les projets scolaires, professionnels et personnels de Semih Dusunceli en systèmes et réseaux.">
+
+    <title>Mes projets | Semih.dev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/commun.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">
+                semih<span class="logo-dot">.</span>dev
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="profil.html">Profil</a>
+                <a href="epreuves.html">Démonstration des épreuves</a>
+                <a href="formation.html">Formation</a>
+                <a href="experience.html">Expérience</a>
+                <a href="projets.html" class="active" aria-current="page">Projets</a>
+                <a href="competences.html">Compétences</a>
+                <a href="veille.html">Veille technologique</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+
+                <button
+                    id="theme-toggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Changer de thème">
+                    <span id="theme-icon">☀</span>
+                </button>
+
+                <a class="nav-contact" href="contact.html">
+                    Me contacter ↗
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENU PRINCIPAL -->
+
+    <main>
+
+        <section class="page-container">
+
+            <!-- INTRODUCTION -->
+
+            <div class="page-heading">
+
+                <span class="section-tag">Mes réalisations</span>
+
+                <h1>Mes projets</h1>
+
+                <p>
+                    Découvrez mes projets scolaires, professionnels et personnels
+                    autour des réseaux informatiques, des systèmes et de
+                    l'administration des infrastructures.
+                </p>
+
+            </div>
+
+
+            <!-- GRILLE DES PROJETS -->
+
+            <div class="projects-grid">
+
+                <!-- PROJET 01 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img
+                            src="images/packet-tracer.png"
+                            alt="Architecture réseau réalisée sur Cisco Packet Tracer">
+                    </div>
+
+                    <div class="project-info">
+
+                        <small>01 · PROJET SCOLAIRE — BTS SIO SISR</small>
+
+                        <h3>Conception d'une architecture réseau redondante</h3>
+
+                        <p>
+                            Réalisation d'une infrastructure réseau simulée
+                            avec Cisco Packet Tracer. Le projet consiste à
+                            configurer plusieurs commutateurs Cisco, à
+                            segmenter le réseau en VLAN et à mettre en place
+                            une redondance des passerelles.
+                        </p>
+
+                        <h4>Objectifs du projet</h4>
+
+                        <ul>
+                            <li>Créer et configurer les VLAN 10 et VLAN 20.</li>
+                            <li>Configurer les liaisons trunk entre les commutateurs.</li>
+                            <li>Mettre en place le routage inter-VLAN.</li>
+                            <li>Configurer le protocole HSRP.</li>
+                            <li>Étudier la redondance des passerelles réseau.</li>
+                        </ul>
+
+                        <h4>Environnement technique</h4>
+
+                        <div class="tags">
+                            <span>Cisco 3560</span>
+                            <span>Cisco 2960</span>
+                            <span>Packet Tracer</span>
+                            <span>VLAN</span>
+                            <span>HSRP</span>
+                            <span>Trunk</span>
+                        </div>
+
+                        <div class="project-document">
+                            <span>Document technique PDF : en préparation</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJET 02 -->
+
+                <article class="project-card">
+
+                    <div class="project-placeholder">
+                        <span>&lt;NETWORK/&gt;</span>
+                    </div>
+
+                    <div class="project-info">
+
+                        <small>02 · PROJET PROFESSIONNEL</small>
+
+                        <h3>Conception d'une infrastructure réseau chez Orange</h3>
+
+                        <p>
+                            Projet professionnel prévu dans le cadre de mon
+                            expérience en entreprise. L'objectif sera de
+                            concevoir et de mettre en place une architecture
+                            réseau intégrant différents services
+                            d'infrastructure.
+                        </p>
+
+                        <h4>Technologies envisagées</h4>
+
+                        <div class="tags">
+                            <span>DHCP</span>
+                            <span>DNS</span>
+                            <span>Réseaux</span>
+                            <span>Firewall</span>
+                        </div>
+
+                        <div class="project-document">
+                            <span>Projet en attente de réalisation</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJET 03 -->
+
+                <article class="project-card">
+
+                    <div class="project-placeholder">
+                        <span>&lt;NAS/&gt;</span>
+                    </div>
+
+                    <div class="project-info">
+
+                        <small>03 · PROJET PERSONNEL</small>
+
+                        <h3>Création et configuration d'un NAS personnel</h3>
+
+                        <p>
+                            Projet personnel visant à construire et configurer
+                            un serveur de stockage réseau à domicile.
+                            L'objectif sera de découvrir le stockage réseau,
+                            le partage de fichiers et l'administration système.
+                        </p>
+
+                        <h4>Technologies envisagées</h4>
+
+                        <div class="tags">
+                            <span>NAS</span>
+                            <span>Stockage réseau</span>
+                            <span>Linux</span>
+                            <span>Administration</span>
+                        </div>
+
+                        <div class="project-document">
+                            <span>Projet en attente de réalisation</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIED DE PAGE -->
+
+    <footer class="footer">
+
+        <a class="logo" href="index.html">
+            semih<span class="logo-dot">.</span>dev
+        </a>
+
+        <p>
+            © <span id="current-year"></span>
+            Semih Dusunceli · Portfolio
+        </p>
+
+        <a class="back-top" href="#">
+            Retour en haut ↑
+        </a>
+
+    </footer>
+
+</body>
+</html>
